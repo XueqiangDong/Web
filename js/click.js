@@ -1,0 +1,16 @@
+$(document).ready(function(){
+				$("#b1").click(function(){
+					$("#p1").hide();
+				});
+				$("#b2").click(function(){
+					$("#p2").hide();
+				});
+				$("button#b3").click(function(){
+					$(this).hide();
+				});
+				$("p").css("color","green");
+                $("button#b4").click(function(){
+                    $("p").show();
+                    $("button").show();
+                });
+			});
