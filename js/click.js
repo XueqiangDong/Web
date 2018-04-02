@@ -1,16 +1,49 @@
 $(document).ready(function(){
-				$("#b1").click(function(){
-					$("#p1").hide();
-				});
-				$("#b2").click(function(){
-					$("#p2").hide();
-				});
-				$("button#b3").click(function(){
-					$(this).hide();
-				});
-				$("p").css("color","green");
-                $("button#b4").click(function(){
-                    $("p").show();
-                    $("button").show();
-                });
-			});
+    $("#b1").click(function(){
+        $("#p1").hide(1000);
+    });
+    $("#b2").click(function(){
+        $("#p2").hide();
+    });
+    $("button#b3").click(function(){
+        $(this).hide();
+    });
+    $("p").css("color","green");
+    $("button#b4").click(function(){
+        $("p").show(1000,changeColor());
+        $("button").show();
+    });
+    $("button#b5").click(function(){
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle(1000);
+        $("#div3").fadeToggle(3000);
+    });
+    $("button#b6").click(function(){
+        $("#div1").fadeTo(100,0.2);
+        $("#div2").fadeTo(100,0.2);
+        $("#div3").fadeTo(100,0.2);
+    });
+});
+function changeColor() {
+	$("p").css("color","red");
+}
+
+/* 如果$被其他占用，可以改名
+//$.noConflict();
+var jQuery=$.noConflict();
+jQuery(document).ready(function(){
+    jQuery("#b1").click(function(){
+        jQuery("#p1").hide();
+	});
+    jQuery("#b2").click(function(){
+        jQuery("#p2").hide();
+	});
+    jQuery("button#b3").click(function(){
+        jQuery(this).hide();
+	});
+    jQuery("p").css("color","green");
+    jQuery("button#b4").click(function(){
+        jQuery("p").show();
+        jQuery("button").show();
+	});
+});*/
