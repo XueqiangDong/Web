@@ -1,0 +1,58 @@
+div.panel,p.flip
+{
+	margin:1px;
+	padding:5px;
+	text-align:center;
+	background:#55cc88;
+	border:solid 1px #a3c3c3;
+	color: #fff;
+	font-size: 1.6em;
+}
+div.panel
+{
+	height:120px;
+	display:none;
+}
+#tableContainer1
+{
+	display: table;
+	border-spacing: 10px;
+}
+#tableRow1
+{
+	display: table-row;
+}
+#div1p1
+{
+	display: table-cell;
+	background-color:red;
+	color: white;
+	font-size: xx-large;
+	padding: 15px;
+	vertical-align: top;
+}
+#div1p2
+{
+	color: white;
+	display: table-cell;
+	background-color:green;
+	font-size: xx-large;
+	padding: 15px;
+	vertical-align: top;
+}
+#div1p3
+{
+	color: white;
+	display: table-cell;
+	background-color:blue;
+	font-size: xx-large;
+	padding: 15px;
+	vertical-align: top;
+}
+div#div2
+{
+	background: #F7FE2E;
+	height: 80px;
+	width: 100px;
+	position: absolute;
+}

@@ -3,6 +3,7 @@
   	<head>
 		<script type="text/javascript" src="jquery-3.3.1.js"></script>
 		<script type="text/javascript" src="js/click.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.css">
 	</head>
 
 	<body>
@@ -12,17 +13,29 @@
 		<button id="b1" type="button">隐藏段落</button>
 		<button id="b2" type="button">隐藏另一段落</button>
 		<button id="b3" type="button">隐藏自己</button>
-		<button id="b4" type="button">显示</button>
+		<button id="b4" type="button">显示隐藏并改成红色</button>
 		<button id="b5" type="button">淡入淡出矩形</button>
 		<button id="b6" type="button">透明20%</button>
+		<button id="b7" type="button">黄色矩形动画</button>
 		<br><br>
-		<div>
-		<p id="div1" style="width:80px;height:80px;display:none;background-color:red;"></p>
+		<div id="tableContainer1">
+			<div id="tableRow1">
+				<section id="div1p1"><p>矩形1</p></section>
+				<section id="div1p2"><p>矩形2</p></section>
+				<section id="div1p3"><p>矩形3</p></section>
+			</div> <!-- tableRow1 -->
+		</div><!-- tableContainer1 -->
 
-		<p id="div2" style="width:80px;height:80px;display:none;background-color:green;"></p>
-
-		<p id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></p><br>
+		<div class="panel">
+			<p>我是第一段落，演示折叠功能</p>
+			<p>我是第二段落，演示折叠功能。slideToggle</p>
 		</div>
+
+		<p class="flip">点击这里展开或者折叠</p><br>
+		<div id="div2">
+
+		</div>
+
 	</body>
 </html>
 
